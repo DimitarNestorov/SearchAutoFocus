@@ -1,6 +1,4 @@
-<p align="center"><img width="60" height="60" src="https://raw.githubusercontent.com/dimitarnestorov/SearchAutoFocus/master/Preferences/Resources/Icon%40512h.png" alt="Icon"></p>
-<h1 align="center">SearchAutoFocus</h1>
-<p align="center">Automatically focus search inputs</p>
+<p align="center"><img width="538" src="https://raw.githubusercontent.com/dimitarnestorov/SearchAutoFocus/master/promo.png" alt="SearchAutoFocus — Automatically focus the search bar"></p>
 
 ## License
 
