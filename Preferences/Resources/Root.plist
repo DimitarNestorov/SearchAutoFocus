@@ -47,6 +47,8 @@
 			<string>PayPal</string>
 			<key>action</key>
 			<string>visitPaypal</string>
+			<key>icon</key>
+			<string>PayPal.png</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -55,6 +57,8 @@
 			<string>Discord</string>
 			<key>action</key>
 			<string>visitDiscord</string>
+			<key>icon</key>
+			<string>Discord.png</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -63,6 +67,8 @@
 			<string>Twitter</string>
 			<key>action</key>
 			<string>visitTwitter</string>
+			<key>icon</key>
+			<string>Twitter.png</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -71,6 +77,8 @@
 			<string>GitHub</string>
 			<key>action</key>
 			<string>visitGithub</string>
+			<key>icon</key>
+			<string>GitHub.png</string>
 		</dict>
 	</array>
 </dict>

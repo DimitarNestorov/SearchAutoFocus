@@ -1,3 +1,4 @@
 .theos/
 .vscode/
 packages/
+.DS_Store

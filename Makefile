@@ -10,5 +10,5 @@ $(TWEAK_NAME)_CFLAGS = -fobjc-arc
 $(TWEAK_NAME)_LIBRARIES = sparkapplist
 
 include $(THEOS_MAKE_PATH)/tweak.mk
-SUBPROJECTS += searchautofocuspreferences
+SUBPROJECTS += Preferences
 include $(THEOS_MAKE_PATH)/aggregate.mk
