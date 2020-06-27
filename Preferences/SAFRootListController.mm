@@ -1,10 +1,31 @@
 #include "SAFRootListController.h"
 
+#include "NSTask.h"
+
 #import "SparkAppListTableViewController.h"
 
 NSDictionary *emptyDictionary = @{};
 
 @implementation SAFRootListController
+
+- (instancetype)init {
+    self = [super init];
+
+    if (self) {
+        self.respringButton = [[UIBarButtonItem alloc] initWithTitle:@"Respring" style:UIBarButtonItemStylePlain target:self action:@selector(respring)];
+        self.appListRespringButton = [[UIBarButtonItem alloc] initWithTitle:@"Respring" style:UIBarButtonItemStylePlain target:self action:@selector(respring)];
+        self.navigationItem.rightBarButtonItem = self.respringButton;
+    }
+
+    return self;
+}
+
+- (void)respring {
+	NSTask *t = [[NSTask alloc] init];
+    [t setLaunchPath:@"/usr/bin/killall"];
+    [t setArguments:[NSArray arrayWithObjects:@"backboardd", nil]];
+    [t launch];
+}
 
 - (NSArray *)specifiers {
 	if (!_specifiers) {
@@ -35,6 +56,8 @@ NSDictionary *emptyDictionary = @{};
 	}
 
 	SparkAppListTableViewController* s = [[SparkAppListTableViewController alloc] initWithIdentifier:@"com.dimitarnestorov.searchautofocus" andKey:@"apps"];
+	s.navigationItem.rightBarButtonItem = self.appListRespringButton;
+	s.navigationItem.title = @"Select Apps";
 
 	[self.navigationController pushViewController:s animated:YES];
 	self.navigationItem.hidesBackButton = FALSE;
