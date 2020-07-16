@@ -5,8 +5,11 @@
 - (void)viewDidAppear:(BOOL)animated {
 	%orig;
 
-	[((SAFSearchAutoFocusViewController *)self).navigationItem.searchController.searchBar becomeFirstResponder];
-	[UIApplication.sharedApplication sendAction:@selector(selectAll:) to:nil from:nil forEvent:nil];
+	id input = ((SAFSearchAutoFocusViewController *)self).navigationItem.searchController.searchBar;
+	if (input) {
+		[input becomeFirstResponder];
+		[UIApplication.sharedApplication sendAction:@selector(selectAll:) to:nil from:nil forEvent:nil];
+	}
 }
 %end
 

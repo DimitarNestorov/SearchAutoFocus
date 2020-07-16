@@ -1,7 +1,7 @@
 Package: com.dimitarnestorov.searchautofocus
 Name: SearchAutoFocus
 Depends: mobilesubstrate, preferenceloader, com.spark.libsparkapplist, firmware (>= 11.0)
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Automatically focus search inputs
 Maintainer: Dimitar Nestorov
